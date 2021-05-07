@@ -7,6 +7,7 @@ from random import randint
 class Game:
     def start_game(self):
         while True:
+            print()
             print("Chose the game mode: ")
             print("[1] 1 Player vs Bot")
             print("[2] 2 Players")
@@ -17,7 +18,7 @@ class Game:
                 while True:
                     print("Enter size of grid (between 3 to 10): ")
                     print()
-                    size = input("Enter command: ")
+                    size = input("Enter size: ")
 
                     if size.isdigit() and 3 <= int(size) <= 10:
                         break
@@ -98,7 +99,7 @@ class Game:
                 while True:
                     print("Enter size of grid (between 3 to 10): ")
                     print()
-                    size = input("Enter command: ")
+                    size = input("Enter size: ")
 
                     if size.isdigit() and 3 <= int(size) <= 10:
                         break
@@ -182,6 +183,7 @@ class Game:
                 print("Please enter correct command!")
 
             while True:
+                print()
                 print("Do you want to play again?")
                 print("[1] YES")
                 print("[2] EXIT")
@@ -194,8 +196,3 @@ class Game:
                     exit(1)
                 else:
                     print("Please enter correct command!")
-
-
-game = Game()
-game.start_game()
-
